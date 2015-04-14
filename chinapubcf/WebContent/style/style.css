@@ -1,0 +1,107 @@
+.bordered_table {
+	width: 100%;
+	border-collapse: collapse;
+	border-color: #999999;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+}
+.inbordered_table {
+	width: 100%;
+	border-collapse: collapse;
+	border-color: #999988;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+}
+.table_title {
+	text-weight: bold;
+	align: center;
+}
+
+.book_table {
+	width: 95%;
+	border-collapse: collapse;
+	border-color: #999999;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+}
+
+.items {
+	padding-left: 20px;
+}
+
+.login {
+	
+}
+
+.dashed_x {
+	background: transparent url(../images/dashed.gif) repeat-x scroll 0 0;
+	font-size: 0;
+	height: 1px;
+	line-height: 1px;
+}
+
+.dashed_y {
+	background: transparent url(../images/dashed.gif) repeat-y scroll 0 0;
+	font-size: 0;
+	width: 1px;
+}
+
+.odd_row {
+	background_color: grey;
+}
+#right .right_c .my_order td.book_type {
+border-bottom: 1px solid #c5ddf6;
+height: 30px;
+padding-left: 35px;
+margin-top: 20px;
+}
+#right .right_c .my_order .order_ret_q .t_right{text-align:right; width:90px;}
+#right .right_c .my_order .order_ret_q .t_right span{color:#F60;}
+.bqsub {
+background: url(../images/bqsub.png) no-repeat;
+width: 50px;
+height: 21px;
+border: none;
+text-align: left;
+text-indent: -20em;
+vertical-align: top;
+margin-left: 10px;
+cursor: pointer;
+}
+.order_ret_q .pay_hurry, #right .right_c .my_order .order_ret_q a.quit {
+display: inline;
+float: left;
+padding: 0;
+color: #333;
+margin-right: 10px;
+margin-top: 10px;
+}
+.lower_book_q{
+    background: url(../images/lower_book_q.jpg) no-repeat;
+    float: left;
+	width: 17px;
+	height: 20px;
+}
+.add_book_q{
+	background: url(../images/add_book_q.jpg) no-repeat;
+	float: right;
+	width: 17px;
+	height: 20px;
+}
+.text{
+	width: 36px;
+	height: 16px;
+	border: 1px solid #ccc;
+	padding: 2px;
+	text-align: center;
+}
+.number{
+	width: 80px;
+	height: 16px;
+	border: 0px solid #ccc;
+	padding: 2px;
+	text-align: center;
+}
+.logout{
+	float:right;
+} 

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ChinaPub用户注册</title>
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+<script src="script/prototype.js" type="text/javascript"></script>
+<script src="script/ui.js" type="text/javascript"></script>
+</head>
+<body>
+<img alt="logo" src="images/cp_logo.jpg">
+<p align="center">互动出版社图书推荐引擎</p>
+<div width="60%">
+<p align=right style="padding-right:300px;	">已注册用户,请<a href="index.html">登录</a></p>
+<div class="login_box">
+<div id="con_a_1" style="display: block;">
+<table name="regform" id="regform" width="70%">
+ <tr><div class="item">
+       <td align="right"><span class="float1"><span style="color:red">*</span>用户名：</span></td>
+         <td>           <div class="item_inp"><input style="width:200px;" class="normal" type="text" name="usrname" id="usrname" maxlength="40">  </div>
+                    <div class="item_r"><span id="uid2_m" class="red12"><span class="gray12">由大小写英文字母、数字和下划线组成，长度4-20位。</span></span></div></td>
+                </div>
+                </tr>
+                <tr><div class="item">
+                <td align="right"><span class="float1"><span style="color:red">*</span>密&nbsp;&nbsp;码：</span></td>
+          
+				<td>	<div class="item_inp"><input style="width:200px;" class="normal" type="password" name="usrpwd" id="usrpwd" maxlength="40">
+                    </div>
+                    <div class="item_r"><span id="pwd2_m" class="red12"><span class="gray12">建议8位以上的数字字母和下划线组成</span></span></div></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="item">
+                <td align="right"><span class="float1"><span style="color:red">*</span>确认密码：</span></td>
+                  <td>  <div class="item_inp"><input style="width:200px;" class="normal" type="password" name="usrpwd2" id="usrpwd2" maxlength="40">
+                    </div>
+                  <div class="item_r"><span id="pwd22_m" class="red12">请再次输入密码</span></div></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="item">
+                	<td align="right"><span class="float1"><span style="color:red">*</span>邮&nbsp;&nbsp;箱：</span></td>
+                    <td><div class="item_inp"><input style="width:200px;" class="normal" type="text" name="email" value="" id="email" maxlength="50"><!--接受来自搜狐的邮箱--><input name="outemail" id="outemail" type="hidden"></div>
+                   <div class="item_r"><span class="gray12"><span id="email_m" class="red12">我们会将注册信息发送到该地址，同时Email也是“找回密码”的唯一途径</span></span></div>
+                </td></div>
+                </tr>
+                <tr>
+                    	<td class="t_right" align="right">身份：</td>
+                        <td>
+                            <label><input type="radio" name="status" value="学生">学生</label>
+                            <label><input type="radio" name="status" value="教师">教师</label>
+                            <label><input type="radio" name="status" value="上班族">上班族</label>
+                            <label><input type="radio" name="status" value="自由职业">自由职业</label>
+                            <label><input type="radio" name="status" checked="checked" value="其他职业">其他职业</label>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td class="t_right" valign="top" align="right">喜欢图书分类：</td>
+                        <td class="book_type" width="580">
+                         	      <label><input name="admirefield" type="checkbox" value="化学">化学</label>
+                                  <label><input name="admirefield" type="checkbox" value="经济管理">经济管理</label>
+                                  <label><input name="admirefield" type="checkbox" value="历史">历史</label>
+                                  <label><input name="admirefield" type="checkbox" value="少儿">少儿</label>
+                                  <label><input name="admirefield" type="checkbox" value="数学">数学</label>
+                                  <label><input name="admirefield" type="checkbox" value="外语">外语</label>
+                                  <label><input name="admirefield" type="checkbox" value="文学">文学</label>
+                                  <label><input name="admirefield" type="checkbox" value="物理">物理</label>
+                                  <label><input name="admirefield" type="checkbox" value="小说">小说</label>
+                        <!-- 	<ul>
+                                  <li><label><input name="hob" type="checkbox" value="化学">化学</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="经济管理">经济管理</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="历史">历史</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="少儿">少儿</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="数学">数学</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="外语">外语</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="文学">文学</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="物理">物理</label></li>
+                                  <li><label><input name="hob" type="checkbox" value="小说">小说</label></li>
+                            </ul> -->
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td class="t_right" valign="top" align="right">擅长领域：</td>
+                        <td class="book_type" width="580">
+                        <!-- 	<ul>
+                                  <li><label><input name="goodat" type="checkbox" value="化学">化学</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="经济管理">经济管理</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="历史">历史</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="少儿">少儿</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="数学">数学</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="外语">外语</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="文学">文学</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="物理">物理</label></li>
+                                  <li><label><input name="goodat" type="checkbox" value="小说">小说</label></li>
+                            </ul> -->
+                             	   <label><input name="expertat" type="checkbox" value="化学">化学</label> 
+                                   <label><input name="expertat" type="checkbox" value="经济管理">经济管理</label> 
+                                   <label><input name="expertat" type="checkbox" value="历史">历史</label> 
+                                   <label><input name="expertat" type="checkbox" value="少儿">少儿</label> 
+                                   <label><input name="expertat" type="checkbox" value="数学">数学</label> 
+                                   <label><input name="expertat" type="checkbox" value="外语">外语</label> 
+                                   <label><input name="expertat" type="checkbox" value="文学">文学</label> 
+                                   <label><input name="expertat" type="checkbox" value="物理">物理</label> 
+                                   <label><input name="expertat" type="checkbox" value="小说">小说</label> 
+                        </td>
+                    </tr>
+   <!--                  <tr>
+    <td class="t_right" valign="top" align="right">我的标签：</td>
+    
+    <td width="480">
+        <div id="tag" style="width:480px;">
+            <ul class="myTags clear">
+              你暂时没指定标签！
+            </ul>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="t_right" align="right">添加标签：</td>
+    <td class="book_type" width="480"><input id="addmark" style="width:200px; height:19px; border:1px solid #ddd; line-height:19px;" type="text">
+    <input class="bqsub" type="button"></td>
+  </tr> -->
+            <!--     <tr>
+                <div class="item">
+                	<td><span class="float1"><span>*</span>验证码：</span></td>
+                    <td><div class="item_inp"><input style="width:100px;" class="normal" type="text" name="yzm" id="yzm" onfocus="chcls(this);" onblur="yzm22();chcls(this);" maxlength="4"></div></td>
+                   <td> <div class="item_r">
+                    	<label><span class="gray12"><img src="imgchk/validatecode.asp" align="absmiddle" border="0">&nbsp;&nbsp;<span id="yzm_m" class="red12">请在输入框中键入图片中的数字</span></span>
+                        </label> 
+                    </div></td>
+                </div>
+                </tr> -->
+                <tr>
+                <div class="item">
+                	<td align="right"><span class="float1">从哪里知道china-pub：</span></td>
+                   <td> <div class="item_inp">
+                    	<select name="knowfrom" id="knowfrom">
+							<option value="">请选择</option>
+							<option value="搜索引擎">搜索引擎</option>
+							<option value="社区/微博">社区/微博</option>
+							<option value="线下展会">线下展会</option>
+							<option value="朋友推荐">朋友推荐</option>
+							<option value="其他">其他</option>
+						</select>
+                    </div></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="item">
+                	<td><span class="float1"></span></td>
+                   <td> <div class="item_inp"> 
+                    	<input name="tkuan" type="checkbox" class="check" id="tkuan" style="vertical-align:middle;" checked="CHECKED">
+                        <span style="vertical-align:middle">我已阅读并同意<a target="_blank" href="http://www.china-pub.com/temporary/faq/2007FAQ/xieyi.asp">《互动出版网用户注册协议》</a></span></div></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="item">
+                	<td><span class="float1"></span></td>
+                    <td><div class="item_inp">
+                     
+						 <input class="button" type="image" src="images/login_up.jpg" name="Submit2" onclick="register()">
+                    </div></td>
+                </div>
+                </tr>
+            </table>
+            </div>
+            
+  <!--           <div id="con_a_2" style="display: none;">
+            	<div class="login_school">
+                	<h2>欢迎注册成为高校用户</h2>
+                    <div class="login_school_y">
+                    	<a target="_blank" href="http://www.china-pub.com/STATIC07/0702/zh_songdali1_070209.asp">了解更多&gt;&gt;</a>
+                    </div>
+                </div>
+				<form method="post" action="Register2.asp?bb=gx" name="regform2" id="regform2">
+            	<div class="item">
+                	<span class="float1"><span>*</span>用户名：</span>
+					
+                    <div class="item_inp"><input style="width:200px;" class="normal" type="text" name="uid2_2" id="uid2_2" onblur="if(nm2_2())chkusername_2();chcls(this);" onfocus="chcls(this);" maxlength="40"><input name="olduid2_2" id="olduid2_2" type="hidden"></div>
+                    <div class="item_r"><span id="uid2_2_m" class="red12"><span class="gray12">由大小写英文字母、数字和下划线组成，长度4-20位。</span></span></div>
+                </div>
+                <div class="item">
+                	<span class="float1"><span>*</span>密&nbsp;&nbsp;码：</span>
+		 
+					 <div class="item_inp"><input style="width:200px;" class="normal" onfocus="chcls(this);" type="password" name="pwd2_2" onblur="mm2_2();chcls(this);" id="pwd2_2" maxlength="40"></div>
+					 
+                    <div class="item_r"><span id="pwd2_2_m" class="red12"><span class="gray12">建议8位以上的数字字母和下划线组成</span></span></div>
+                 
+                </div>
+                <div class="item">
+                	<span class="float1"><span>*</span>确认密码：</span>
+					<div class="item_inp"><input style="width:200px;" class="normal" type="password" name="pwd22_2" onblur="mm22_2();chcls(this);" onfocus="chcls(this);" id="pwd22_2" maxlength="40"></div>
+                    <div class="item_r"><span id="pwd22_2_m" class="red12">请再次输入密码！</span></div>
+                    
+                </div>
+                <div class="item">
+                	<span class="float1"><span>*</span>邮&nbsp;&nbsp;箱：</span>
+					                
+                   <div class="item_inp"><input style="width:200px;" class="normal" onfocus="chcls(this);" type="text" name="email_2" value="" id="email_2" onblur="if(cemail_2())chkemail_2();chcls(this);" maxlength="50"><input name="oldemail_2" id="oldemail_2" type="hidden">接受来自搜狐的邮箱<input name="outemail_2" id="outemail_2" type="hidden"><input name="gwc" id="gwc" type="hidden" value=""></div>
+				   
+				   
+				    <div class="item_r"><span class="gray12"><span id="email_2_m" class="red12">我们会将注册信息发送到该地址，同时Email也是“找回密码”的唯一途径</span></span></div>
+                    
+                </div>
+				 
+                <div class="item">
+                	<span class="float1"><span>*</span>所在院校：</span>
+                    <div class="item_inp">
+						   <span id="country_c">
+						   <input type="hidden" value="中国" class="normal" name="country" id="country">
+						   </span>
+						   <span id="province_c"><select id="province" name="province" onchange="getit('province')" style="width:auto">
+		<option value="" selected="">请选择</option><option value="北京">北京</option><option value="上海">上海</option><option value="山东">山东</option><option value="广东">广东</option><option value="海南">海南</option><option value="内蒙古">内蒙古</option><option value="陕西">陕西</option><option value="青海">青海</option><option value="四川">四川</option><option value="黑龙江">黑龙江</option><option value="湖北">湖北</option><option value="湖南">湖南</option><option value="吉林">吉林</option><option value="辽宁">辽宁</option><option value="天津">天津</option><option value="山西">山西</option><option value="河北">河北</option><option value="新疆">新疆</option><option value="河南">河南</option><option value="安徽">安徽</option><option value="江苏">江苏</option><option value="甘肃">甘肃</option><option value="宁夏">宁夏</option><option value="云南">云南</option><option value="浙江">浙江</option><option value="福建">福建</option><option value="贵州">贵州</option><option value="江西">江西</option><option value="广西">广西</option><option value="西藏">西藏</option><option value="重庆">重庆</option><option value="香港">香港</option><option value="台湾">台湾</option><option value="澳门">澳门</option></select></span>
+						   <span id="city_c"></span>
+						   <span id="college_c"></span> 
+                        <label>您的学校不在以上列表中？请<a href="javascript:void(0);" onclick="$('newcollege').style.display='';">点此添加</a> 
+		  
+						</label>
+                    </div>
+                </div>
+                <div id="newcollege" class="item" style="display:none">
+                	<span class="float1"><span>*</span> 请添写您的学校全称：</span>
+                    <div class="item_inp"> <input style="width:200px;" name="ncollege" class="normal" type="text" id="ncollege" size="20" onfocus="chcls(this);" onblur="chcls(this);"><br>
+              <span style="color:#666; padding-top:5px;">备注：我们会将您学校是否成功添加进高校数据库的信息通过邮件通知您,请注意查收</span>
+            
+           <p style="display:none;"><span id="province_i"></span>&nbsp;&nbsp;<span id="city_i"></span>&nbsp;&nbsp;<span id="clg"></span>&nbsp;&nbsp;<input name="address" type="text" onblur="address2();chcls(this);" onfocus="chcls(this);" id="address" size="25" maxlength="100">			
+          <span class="red14">*</span>&nbsp;&nbsp;<span id="address_m" class="red12"></span></p>
+					
+					</div>
+                </div>
+ 
+				
+				  <div class="item">
+                	<span class="float1"><span>*</span>验证码：</span>
+                    <div class="item_inp"><input style="width:100px;" class="normal" type="text" name="yzm2" id="yzm2" onfocus="chcls(this);" onblur="chcls(this);yzm2_2();" maxlength="4"></div>
+                    <div class="item_r">
+                    	<label><span class="gray12"><img src="imgchk/validatecode.asp" align="absmiddle" border="0">&nbsp;&nbsp;<span id="yzm2_m" class="red12"> 请在输入框中键入图片中的数字</span></span>
+                        </label> 
+                    </div>
+                </div>
+				
+				
+                <div class="item">
+                	<span class="float1"><span>*</span>从哪里知道china-pub：</span>
+                    <div class="item_inp">
+                    	<select name="hysrc2" id="hysrc2">
+							<option value="">请选择</option>
+							<option value="搜索引擎">搜索引擎</option>
+							<option value="社区/微博">社区/微博</option>
+							<option value="线下展会">线下展会</option>
+							<option value="朋友推荐">朋友推荐</option>
+							<option value="其他">其他</option>
+						</select>
+                    </div>
+                </div>
+                <div class="item">
+                	<span class="float1"></span>
+                    <div class="item_inp">
+                    	<input class="check" type="checkbox" id="tkuan2" name="tkuan2" value="1" checked="CHECKED">
+                        <span>我已阅读并同意<a target="_blank" href="http://www.china-pub.com/temporary/faq/2007FAQ/xieyi.asp">《互动出版网用户注册协议》</a></span></div>
+                    <div class="item_t"></div>
+                </div>
+            
+				
+				 <div class="item">
+                	<span class="float1"></span>
+                    <div class="item_inp">
+                     
+						 <input class="button" type="image" src="http://www.china-pub.com/images/shouye2012/login_up.jpg" name="Submit2" onclick="return form_onsubmit2()">
+                    </div>
+                </div>
+				</form>
+            </div> -->
+        </div>
+        </div>
+</body>
+</html>
